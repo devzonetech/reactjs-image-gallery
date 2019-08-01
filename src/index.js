@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import ModalImage from "react-modal-image"
 
 import classes from './styles/styles.scss'
 
@@ -7,26 +8,31 @@ export default class DztImageGalleryComponent extends Component {
 
   getBuildImagesItems = () => {
 
-    var styles = {};
-    var imagesArr = [];
+    var keyId = 0;
+    var imagesArr = []
     this.props.images.forEach(image => {
       imagesArr.push(
-        <div className={classes.gridItem}>
-          <a href={image.url} target="_blank">
+        <div key={keyId++} className={classes.gridItem}>
             <figure>
-                <img src={image.thumbUrl} style={styles} alt={image.alt} />
-                <figcaption>{image.title}</figcaption>
+              <ModalImage
+                small={image.thumbUrl}
+                large={image.url}
+                alt={image.alt}
+                showRotate={true}
+                hideZoom={false}
+                className="bigImage"
+              />
+              <figcaption>{image.title} {image.title}</figcaption>
             </figure>
-          </a>
         </div>
-      );
+      ) 
     });
 
-    return imagesArr;
+    return imagesArr
   }
 
   static propTypes = {
-    images: PropTypes.object
+    images: PropTypes.array
   }
 
   render() {
