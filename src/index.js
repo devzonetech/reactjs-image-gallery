@@ -1,21 +1,41 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import styles from './styles.css'
+import classes from './styles/styles.scss'
 
-export default class ExampleComponent extends Component {
+export default class DztImageGalleryComponent extends Component {
+
+  getBuildImagesItems = () => {
+
+    var styles = {};
+    var imagesArr = [];
+    this.props.images.forEach(image => {
+      imagesArr.push(
+        <div className={classes.gridItem}>
+          <a href={image.url} target="_blank">
+            <figure>
+                <img src={image.thumbUrl} style={styles} alt={image.alt} />
+                <figcaption>{image.title}</figcaption>
+            </figure>
+          </a>
+        </div>
+      );
+    });
+
+    return imagesArr;
+  }
+
   static propTypes = {
-    text: PropTypes.string
+    images: PropTypes.object
   }
 
   render() {
-    const {
-      text
-    } = this.props
 
     return (
-      <div className={styles.test}>
-        Example Component: {text}
+      <div className={classes.wrapper}>
+          <div className={classes.grid}>
+            {this.getBuildImagesItems()}
+          </div>
       </div>
     )
   }
