@@ -74,7 +74,7 @@ class Example extends Component {
 ```
 | Prop                   | Type      | Description                                                                                                   |
 | ---------------------- | --------- | ------------------------------------------------------------------------------------------------------------- |
-| `data`                 | `array`   | Array contains image objects. Each image object contains `url`, `title` and `thumbUrl` properties as is shown in the example usage.                                                          |
+| `images`                 | `array`   | Array contains image objects. Each image object contains `url`, `title` and `thumbUrl` properties as is shown in the example usage.                                                          |
 | `imgClassName`         | `String`  | Optional. `class` for the small preview image.                                                                |
 | `hideDownload`         | `boolean` | Optional. Set to `true` to hide download-button from the Lightbox.                                            |
 | `hideZoom`             | `boolean` | Optional. Set to `true` to hide zoom-button from the Lightbox.                                                |
