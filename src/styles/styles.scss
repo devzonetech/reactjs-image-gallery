@@ -30,11 +30,11 @@
         margin-bottom: 1rem;
     }
   
-    &Item img {
+    &Item figure > div > img {
       opacity: 0.5;
     }
 
-    &Item img:hover {
+    &Item figure > div > img:hover {
       opacity: 1;
     }
 }

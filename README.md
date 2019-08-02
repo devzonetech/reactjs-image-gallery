@@ -4,6 +4,9 @@
 
 [![NPM](https://img.shields.io/npm/v/reactjs-image-gallery.svg)](https://www.npmjs.com/package/reactjs-image-gallery) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+## DEMO
+[DEMO](https://www.devzonetech.com/demo/reactjs-image-gallery/)
+
 ## Install
 
 ```bash
@@ -43,27 +46,6 @@ class Example extends Component {
     },
 
     {
-      url: 'https://images.unsplash.com/photo-1564223288351-a96bea22b5f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1870&q=80',
-      title: 'Black and white',
-      thumbUrl: 'https://images.unsplash.com/photo-1564223288351-a96bea22b5f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1870&q=80',
-    },
-    {
-      url: 'https://images.unsplash.com/photo-1547514701-42782101795e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1868&q=80',
-      title: 'Orange fruit',
-      thumbUrl: 'https://images.unsplash.com/photo-1547514701-42782101795e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=250&q=80',
-    },
-    {
-      url: 'https://images.unsplash.com/photo-1550258987-190a2d41a8ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1868&q=80',
-      title: 'Pineapple',
-      thumbUrl: 'https://images.unsplash.com/photo-1550258987-190a2d41a8ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1868&q=80',
-    },
-    {
-      url: 'https://images.unsplash.com/photo-1549370699-e8c493402b69?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1868&q=80',
-      title: 'Breakfast',
-      thumbUrl: 'https://images.unsplash.com/photo-1549370699-e8c493402b69?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=250&q=80',
-    },
-
-    {
       url: 'https://images.unsplash.com/photo-1444465693019-aa0b6392460d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
       title: 'Bird',
       thumbUrl: 'https://images.unsplash.com/photo-1444465693019-aa0b6392460d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=250&q=80',
@@ -90,6 +72,14 @@ class Example extends Component {
 
 }
 ```
+| Prop                   | Type      | Description                                                                                                   |
+| ---------------------- | --------- | ------------------------------------------------------------------------------------------------------------- |
+| `data`                 | `array`   | Array contains image objects. Each image object contains `url`, `title` and `thumbUrl` property as is shown in the example                                                          |
+| `imgClassName`         | `String`  | Optional. `class` for the small preview image.                                                                |
+| `hideDownload`         | `boolean` | Optional. Set to `true` to hide download-button from the Lightbox.                                            |
+| `hideZoom`             | `boolean` | Optional. Set to `true` to hide zoom-button from the Lightbox.                                                |
+| `hideRotate`           | `boolean` | Optional. Set to `true` to show rotate-button within the Lightbox.                                            |
+| `imageBackgroundColor` | `String`  | Optional. Background color of the image shown in Lightbox. Defaults to black. Handy for transparent images.   |
 
 ## License
 

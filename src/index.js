@@ -16,13 +16,16 @@ export default class DztImageGalleryComponent extends Component {
             <figure>
               <ModalImage
                 small={image.thumbUrl}
+                medium={image.url}
                 large={image.url}
-                alt={image.alt}
-                showRotate={true}
-                hideZoom={false}
-                className="bigImage"
+                alt={image.title}
+                hideDownload={this.props.hideDownload}
+                hideZoom={this.props.hideZoom}
+                showRotate={!this.props.hideRotate}
+                className={this.props.imgClassName}
+                imageBackgroundColor={this.props.imageBackgroundColor}
               />
-              <figcaption>{image.title} {image.title}</figcaption>
+              <figcaption>{image.title}</figcaption>
             </figure>
         </div>
       ) 
@@ -32,7 +35,12 @@ export default class DztImageGalleryComponent extends Component {
   }
 
   static propTypes = {
-    images: PropTypes.array
+    images: PropTypes.array,
+    hideDownload: PropTypes.bool,
+    hideZoom: PropTypes.bool,
+    showRotate: PropTypes.bool,
+    imgClassName: PropTypes.string,
+    imageBackgroundColor: PropTypes.string
   }
 
   render() {
