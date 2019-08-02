@@ -1,6 +1,6 @@
 {
   "name": "reactjs-image-gallery",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Responsive, flexible and easy customizable reactjs images gallery library. List images in table view order, thumbnails, onclick show big image preview.",
   "keywords": [
     "images",
