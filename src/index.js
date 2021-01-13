@@ -1,18 +1,16 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import ModalImage from "react-modal-image"
+import ModalImage from 'react-modal-image'
 
 import classes from './styles/styles.scss'
 
 export default class DztImageGalleryComponent extends Component {
-
-  getBuildImagesItems = () => {
-
-    var keyId = 0;
-    var imagesArr = []
-    this.props.images.forEach(image => {
-      imagesArr.push(
-        <div key={keyId++} className={classes.gridItem}>
+    getBuildImagesItems = () => {
+      var keyId = 0
+      var imagesArr = []
+      this.props.images.forEach(image => {
+        imagesArr.push(
+          <div key={keyId++} className={classes.gridItem}>
             <figure>
               <ModalImage
                 small={image.thumbUrl}
@@ -27,30 +25,27 @@ export default class DztImageGalleryComponent extends Component {
               />
               <figcaption>{image.title}</figcaption>
             </figure>
-        </div>
-      ) 
-    });
-
-    return imagesArr
-  }
-
-  static propTypes = {
-    images: PropTypes.array,
-    hideDownload: PropTypes.bool,
-    hideZoom: PropTypes.bool,
-    showRotate: PropTypes.bool,
-    imgClassName: PropTypes.string,
-    imageBackgroundColor: PropTypes.string
-  }
-
-  render() {
-
-    return (
-      <div className={classes.wrapper}>
-          <div className={classes.grid}>
-            {this.getBuildImagesItems()}
           </div>
-      </div>
-    )
-  }
+        )
+      })
+
+      return imagesArr
+    }
+
+    static propTypes = {
+      images: PropTypes.array,
+      hideDownload: PropTypes.bool,
+      hideZoom: PropTypes.bool,
+      hideRotate: PropTypes.bool,
+      imgClassName: PropTypes.string,
+      imageBackgroundColor: PropTypes.string
+    };
+
+    render() {
+      return (
+        <div className={classes.wrapper}>
+          <div className={classes.grid}>{this.getBuildImagesItems()}</div>
+        </div>
+      )
+    }
 }

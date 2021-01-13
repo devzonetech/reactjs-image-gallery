@@ -17,7 +17,7 @@
     "image gallery",
     "photo gallery",
     "pictures gallery",
-    "galery"
+    "pix"
   ],
   "author": "Devzone Tech Ltd.",
   "license": "MIT",
@@ -45,20 +45,19 @@
   },
   "devDependencies": {
     "@svgr/rollup": "^2.4.1",
-    "ajv": "^6.10.2",
+    "ajv": "^6.11.0",
     "babel-core": "^6.26.3",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "cross-env": "^5.2.1",
-    "eslint": "^5.0.1",
     "eslint-config-standard": "^11.0.0",
     "eslint-config-standard-react": "^6.0.0",
-    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-import": "^2.20.0",
     "eslint-plugin-node": "^7.0.1",
     "eslint-plugin-promise": "^4.0.0",
-    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react": "^7.18.0",
     "eslint-plugin-standard": "^3.1.0",
     "gh-pages": "^1.2.0",
     "react": "^16.12.0",
@@ -76,7 +75,7 @@
     "dist"
   ],
   "dependencies": {
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "react-modal-image": "^2.5.0"
   }
 }
