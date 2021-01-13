@@ -1,7 +1,11 @@
-example
-src
+example/
+src/
 .babelrc
-.eslintrc.json
+.eslintrc
 .gitignore
-.editorconfig
-rollup.config.js
+.watchmanconfig
+jest.config.js
+.nyc_output
+README.md
+CHANGELOG.md
+.travis.yml
