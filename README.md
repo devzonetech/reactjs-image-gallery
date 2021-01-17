@@ -5,6 +5,7 @@
 [![NPM](https://img.shields.io/npm/v/reactjs-image-gallery.svg)](https://www.npmjs.com/package/reactjs-image-gallery) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## DEMO
+
 [DEMO](https://www.devzonetech.com/demo/reactjs-image-gallery/)
 
 ## Install
@@ -12,6 +13,19 @@
 ```bash
 npm install --save reactjs-image-gallery
 ```
+
+## FEATURES
+
+- Gallery images listing - responsive table format
+- Image title
+- Responsive design
+- Thumbnails
+- View previous image
+- View next image
+- Download image
+- Zoom image - full size
+- Rotate image
+- Lightweight ~30kb gzipped
 
 ## Usage
 
