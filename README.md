@@ -109,4 +109,4 @@ class Example extends Component {
 
 ## License
 
-MIT © [Devzone Tech](https://www.devzonetech.com/)
+[MIT](LICENSE.txt) © [Devzone Tech](https://www.devzonetech.com/)
