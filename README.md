@@ -25,7 +25,7 @@ npm install --save reactjs-image-gallery
 - Download image
 - Zoom image - full size
 - Rotate image
-- Lightweight ~5kb gzipped
+- Lightweight ~7 kB gzipped
 
 ## Usage
 
