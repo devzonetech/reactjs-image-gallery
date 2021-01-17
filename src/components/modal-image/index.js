@@ -24,7 +24,9 @@ export default class extends Component {
       hideDownload,
       hideZoom,
       showRotate,
-      imageBackgroundColor
+      imageBackgroundColor,
+      onLeftArrowClick,
+      onRightArrowClick
     } = this.props;
     const { modalOpen } = this.state;
 
@@ -52,6 +54,8 @@ export default class extends Component {
             hideZoom={hideZoom}
             showRotate={showRotate}
             imageBackgroundColor={imageBackgroundColor}
+            onLeftArrowClick={onLeftArrowClick}
+            onRightArrowClick={onRightArrowClick}
           />
         )}
       </div>

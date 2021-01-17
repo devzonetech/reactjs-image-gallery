@@ -142,7 +142,9 @@ export default class Lightbox extends Component {
       hideDownload,
       hideZoom,
       showRotate,
-      imageBackgroundColor = "black"
+      imageBackgroundColor = "black",
+      onLeftArrowClick,
+      onRightArrowClick
     } = this.props;
     const { move, zoomed, rotationDeg } = this.state;
 
@@ -205,12 +207,8 @@ export default class Lightbox extends Component {
             enableDownload={!hideDownload}
             enableZoom={!hideZoom}
             enableRotate={!!showRotate}
-            onLeftArrowClick={() => {
-              alert("LEFT");
-            }}
-            onRightArrowClick={() => {
-              alert("RIGHT");
-            }}
+            onLeftArrowClick={onLeftArrowClick}
+            onRightArrowClick={onRightArrowClick}
           />
         </div>
       </div>
