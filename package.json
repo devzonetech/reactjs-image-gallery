@@ -1,6 +1,6 @@
 {
   "name": "reactjs-image-gallery",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Responsive, flexible and easy customizable react images gallery library. List images in table view order, thumbnails, onclick show big image preview.",
   "keywords": [
     "react images list",
@@ -24,8 +24,7 @@
   "license": "MIT",
   "repository": "devzonetech/reactjs-image-gallery",
   "main": "dist/index.js",
-  "module": "dist/index.es.js",
-  "jsnext:main": "dist/index.es.js",
+  "module": "dist/index.js",
   "engines": {
     "node": ">=8",
     "npm": ">=5"
@@ -33,7 +32,7 @@
   "scripts": {
     "test": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
-    "build": "rollup -c",
+    "build": "rm -rf ./dist && rollup -c && minify ./dist/index.js --mangle.keepClassName --deadcode.keepFnArgs --outFile ./dist/index.js",
     "start": "rollup -c -w",
     "prepare": "npm run build",
     "predeploy": "cd example && npm install && npm run build",
@@ -48,6 +47,7 @@
     "@svgr/rollup": "^2.4.1",
     "ajv": "^6.11.0",
     "babel-core": "^6.26.3",
+    "babel-minify": "^0.5.1",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
@@ -61,6 +61,7 @@
     "eslint-plugin-react": "^7.18.0",
     "eslint-plugin-standard": "^3.1.0",
     "gh-pages": "^1.2.0",
+    "node-sass": "^4.13.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "^3.3.0",
@@ -70,8 +71,7 @@
     "rollup-plugin-node-resolve": "^3.3.0",
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-postcss": "^2.0.3",
-    "rollup-plugin-url": "^1.4.0",
-    "node-sass": "^4.13.1"
+    "rollup-plugin-url": "^1.4.0"
   },
   "files": [
     "dist"
